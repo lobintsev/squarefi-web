@@ -48,7 +48,10 @@ function App() {
     <ChakraProvider theme={theme}>
      
       <Box position="sticky" py={2} px={4} top={0} zIndex={1}  display="flex" alignItems="center" justifyContent="space-between" boxShadow='xs' backdropFilter='auto' backdropBlur='10px' _dark={{}} >
-        <Box display="flex" alignItems="center" justifyContent="right" ><Logo h="20px" pointerEvents="none" />
+        <Box display="flex" alignItems="center" justifyContent="right" >
+          // <Logo h="20px" pointerEvents="none" />
+          <p>"😀"</p>
+          
           <Heading fontFamily="heading"  fontWeight='extrabold' lineHeight={10} letterSpacing={-2} ml={4} mb={2}>squarefi</Heading>
         </Box>
         <Button display={['flex', 'flex', 'none', 'none']}variantColor="teal">Get Started</Button>
