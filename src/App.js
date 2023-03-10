@@ -76,7 +76,7 @@ function App() {
           Start at a minimum investment of 50 USDT and access prime rental properties from anywhere in the world.</Text>
           <ButtonGroup spacing='2' size="lg" variant="outline">
             <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
-  <Button>Click</Button>
+  <Button>Know more</Button>
 </a>
             <Button variantColor="teal">Join a waitlist</Button>
           </ButtonGroup>
