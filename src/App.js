@@ -52,7 +52,7 @@ function App() {
          <Logo h="20px" pointerEvents="none" />
        
           
-          <Heading fontFamily="heading"  fontWeight='extrabold' lineHeight={10} letterSpacing={-2} ml={4} mb={2}>squarefi</Heading>
+          <Heading fontFamily="heading"  fontWeight='extrabold' lineHeight={10} letterSpacing={-1} ml={4} mb={2}>squarefi</Heading>
         </Box>
         <Button display={['flex', 'flex', 'none', 'none']}variantColor="teal">Get Started</Button>
         <ButtonGroup spacing='2' display={['none', 'none', 'flex', 'flex']}>
@@ -73,7 +73,7 @@ function App() {
             Invest in the future of real estate
           </Heading>
           <Text  fontFamily="heading" size='xl'>
-          Start at a minimum investment of 50USDT and access prime rental properties from anywhere in the world.</Text>
+          Start at a minimum investment of 50 USDT and access prime rental properties from anywhere in the world.</Text>
           <ButtonGroup spacing='2' size="lg" variant="outline">
             <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
   <Button>Click</Button>
