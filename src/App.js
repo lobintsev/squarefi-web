@@ -75,7 +75,7 @@ function App() {
           <Text  fontFamily="heading" size='xl'>
           Start at a minimum investment of 50USDT and access prime rental properties from anywhere in the world.</Text>
           <ButtonGroup spacing='2' size="lg" variant="outline">
-            <Button >Invest now</Button>
+            <Button href={https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg} >Invest now</Button>
             <Button variantColor="teal">Join a waitlist</Button>
           </ButtonGroup>
 
