@@ -80,8 +80,9 @@ function App() {
           
             <Button variantColor="teal">Join a waitlist</Button>
       
- <Text  fontWeight='extrabold' fontFamily="heading" size='3xl'>
-        Ready for every project</Text>
+  <Heading 
+            fontWeight='extrabold' fontFamily="heading" size='3xl'>
+        Ready for every project</Heading>
 
  <ButtonGroup spacing='2' display={['none', 'none', 'flex', 'flex']}>
           
