@@ -57,7 +57,9 @@ function App() {
         <Button display={['flex', 'flex', 'none', 'none']}variantColor="teal">Get Started</Button>
         <ButtonGroup spacing='2' display={['none', 'none', 'flex', 'flex']}>
           <ColorModeSwitcher />
-          <Button variantColor="teal">Get Started</Button>
+            <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
+  <Button ariant="outline" variantColor="teal">Know more</Button>
+</a>
           <Button variant="outline" variantColor="teal">Sign up</Button>
         </ButtonGroup>
       </Box>
@@ -70,16 +72,14 @@ function App() {
 
           <Heading 
             fontWeight='extrabold' fontFamily="heading" size='3xl'>
-            Invest in the future of real estate
+           The easiest way to raise funds
           </Heading>
           <Text  fontFamily="heading" size='xl'>
-          Start at a minimum investment of 50 USDT and access prime rental properties from anywhere in the world.</Text>
-          <ButtonGroup spacing='2' size="lg" variant="outline">
-            <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
-  <Button>Know more</Button>
-</a>
+         An all-in-one platform to start, manage and grow a decentralized crowdinvestment campaign</Text>
+         
+          
             <Button variantColor="teal">Join a waitlist</Button>
-          </ButtonGroup>
+      
 
 
           <SimpleGrid columns={[1, 2, 3]} spacing={8}>
