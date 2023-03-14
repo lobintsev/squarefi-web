@@ -91,7 +91,7 @@ function App() {
           <Button variant="outline" variantColor="teal">Venture Capital</Button>
  <Button variant="outline" variantColor="teal">Trust</Button>
 <Button variant="outline" variantColor="teal">Crowdfunding</Button>
-<Button variant="outline" variantColor="teal">Crowdfunding</Button>
+<Button variant="outline" variantColor="teal">+ More</Button>
         </ButtonGroup>
 
           <SimpleGrid columns={[1, 2, 3]} spacing={8}>
