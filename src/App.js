@@ -72,7 +72,9 @@ function App() {
 
           <Heading 
             fontWeight='extrabold' fontFamily="heading" size='3xl'>
+               <Center>
            The easiest way to raise funds
+            </Center>
           </Heading>
           <Text  fontFamily="heading" size='xl'>
          An all-in-one platform to start, manage and grow a decentralized crowdinvestment campaign</Text>
