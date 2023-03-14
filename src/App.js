@@ -58,7 +58,7 @@ function App() {
         <ButtonGroup spacing='2' display={['none', 'none', 'flex', 'flex']}>
           <ColorModeSwitcher />
             <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
-  <Button ariant="outline" variantColor="teal">Know more</Button>
+  <Button variant="outline" variantColor="teal">Know more</Button>
 </a>
           <Button variant="outline" variantColor="teal">Sign up</Button>
         </ButtonGroup>
@@ -80,7 +80,18 @@ function App() {
           
             <Button variantColor="teal">Join a waitlist</Button>
       
+ <Text  fontWeight='extrabold' fontFamily="heading" size='3xl'>
+        Ready for every project</Text>
 
+ <ButtonGroup spacing='2' display={['none', 'none', 'flex', 'flex']}>
+          
+          
+  <Button variant="outline" variantColor="teal">Real Estate</Button>
+          <Button variant="outline" variantColor="teal">Venture Capital</Button>
+ <Button variant="outline" variantColor="teal">Trust</Button>
+<Button variant="outline" variantColor="teal">Crowdfunding</Button>
+<Button variant="outline" variantColor="teal">Crowdfunding</Button>
+        </ButtonGroup>
 
           <SimpleGrid columns={[1, 2, 3]} spacing={8}>
           <Card maxW='sm' borderRadius={15}>
