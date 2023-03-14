@@ -84,7 +84,7 @@ function App() {
             fontWeight='extrabold' fontFamily="heading" size='3xl'>
         Ready for every project</Heading>
 
- <ButtonGroup spacing='2' display='flex'>
+ <ButtonGroup spacing='2' display='flex' flexWrap='wrap'>
           
           
   <Button variant="outline" variantColor="teal">Real Estate</Button>
