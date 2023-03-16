@@ -52,7 +52,7 @@ function App() {
          <Logo h="20px" pointerEvents="none" />
        
           
-          <Heading fontFamily="heading"  fontWeight='extrabold' lineHeight={10} letterSpacing={-1} ml={4} mb={2}>squarefi</Heading>
+          <Heading fontFamily="heading"  fontWeight='bold' lineHeight={10} letterSpacing={-1} ml={4} mb={2}>squarefi</Heading>
         </Box>
         <Button display={['flex', 'flex', 'none', 'none']}variantColor="teal">Get Started</Button>
         <ButtonGroup spacing='2' display={['none', 'none', 'flex', 'flex']}>
@@ -70,21 +70,18 @@ function App() {
 
         <VStack spacing={8}>
 
-          <Heading 
-            fontWeight='extrabold' fontFamily="heading" size='3xl'>
-               <Center>
+          <Text fontWeight='extrabold' fontFamily="heading" size='5xl'>
            The easiest way to raise funds
-            </Center>
-          </Heading>
+          </Text>
           <Text  fontFamily="heading" size='xl'>
          An all-in-one platform to start, manage and grow a decentralized crowdinvestment campaign</Text>
          
           
             <Button variantColor="teal">Join a waitlist</Button>
       
-  <Heading 
-            fontWeight='extrabold' fontFamily="heading" size='3xl'>
-        Ready for every project</Heading>
+  <Text 
+            fontWeight='extrabold' fontFamily="heading" size='5xl'>
+        Ready for every project</Text>
 
  <ButtonGroup spacing='2' display='flex' flexWrap='wrap'>
           
