@@ -70,7 +70,7 @@ function App() {
 
         <VStack spacing={8}>
 
-          <Text fontWeight='bold' fontFamily="heading" fontSize='5xl'>
+          <Text fontWeight='bold' fontFamily="heading" fontSize='5xl' align="center" >
            The easiest way to raise funds
           </Text>
  <Text fontWeight='bold' fontFamily="heading" fontSize='6xl'>
