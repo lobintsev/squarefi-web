@@ -64,7 +64,7 @@ function App() {
           <Button variant="outline" variantColor="teal">Sign up</Button>
         </ButtonGroup>
       </Box>
- <Hero>
+ <Hero/>
       <Center>
       <Box pt={20} pb={20}  maxW="1080px" mx={4} >
 
