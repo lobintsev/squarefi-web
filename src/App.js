@@ -70,25 +70,25 @@ function App() {
 
         <VStack spacing={8}>
 
-          <Text fontWeight='bold' fontFamily="heading" size='5xl'>
+          <Text fontWeight='bold' fontFamily="heading" fontSize='5xl'>
            The easiest way to raise funds
           </Text>
- <Text fontWeight='bold' fontFamily="heading" size='6xl'>
+ <Text fontWeight='bold' fontFamily="heading" fontSize='6xl'>
            The easiest way to raise funds
           </Text>
- <Text fontWeight='bold' fontFamily="heading" size='4xl'>
+ <Text fontWeight='bold' fontFamily="heading" fontSize='4xl'>
            The easiest way to raise funds
           </Text>
- <Text fontWeight='bold' fontFamily="heading" size='3xl'>
+ <Text fontWeight='bold' fontFamily="heading" fontSize='3xl'>
            The easiest way to raise funds
           </Text>
- <Text fontWeight='bold' fontFamily="heading" size='2xl'>
+ <Text fontWeight='bold' fontFamily="heading" fontSize='2xl'>
            The easiest way to raise funds
           </Text>
- <Text fontWeight='bold' fontFamily="heading" size='xl'>
+ <Text fontWeight='bold' fontFamily="heading" fontSize='xl'>
            The easiest way to raise funds
           </Text>
- <Text fontWeight='bold' fontFamily="heading" size='lg'>
+ <Text fontWeight='bold' fontFamily="heading" fontSize='lg'>
            The easiest way to raise funds
           </Text>
           <Text  fontFamily="heading" size='xl'>
