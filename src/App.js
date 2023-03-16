@@ -21,6 +21,7 @@ import {
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
+import { Hero } from './Hero';
 import 'typeface-inter';
 
 const theme = extendTheme({
@@ -63,7 +64,7 @@ function App() {
           <Button variant="outline" variantColor="teal">Sign up</Button>
         </ButtonGroup>
       </Box>
-
+ <Hero>
       <Center>
       <Box pt={20} pb={20}  maxW="1080px" mx={4} >
 
