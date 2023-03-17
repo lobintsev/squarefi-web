@@ -162,10 +162,10 @@ function App() {
         <Tabs align="center" variant="unstyled">
  
   <TabList>
-    <Tab _selected={{ color: 'white', fontWeight: '900' }} _hover={{ color: 'white', fontWeight: '900' }}>Offerings catalog</Tab>
-    <Tab _selected={{ color: 'white', fontWeight: '900' }} _hover={{ color: 'white', fontWeight: '900' }}>Investor dashboard</Tab>
-    <Tab _selected={{ color: 'white', fontWeight: '900' }} _hover={{ color: 'white', fontWeight: '900' }}>Entity management</Tab>
-    <Tab _selected={{ color: 'white', fontWeight: '900' }} _hover={{ color: 'white', fontWeight: '900' }}>Control center</Tab>
+    <Tab _selected={{  fontWeight: '900' }} _hover={{  fontWeight: '900' }}>Offerings catalog</Tab>
+    <Tab _selected={{  fontWeight: '900' }} _hover={{ fontWeight: '900' }}>Investor dashboard</Tab>
+    <Tab _selected={{  fontWeight: '900' }} _hover={{ fontWeight: '900' }}>Entity management</Tab>
+    <Tab _selected={{  fontWeight: '900' }} _hover={{  fontWeight: '900' }}>Control center</Tab>
 
   </TabList>
   <TabPanels>
