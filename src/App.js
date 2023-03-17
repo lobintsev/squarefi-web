@@ -19,7 +19,9 @@ import {
   Center,
   AspectRatio,
   Container,
-  Icon
+  Icon,
+  useColorModeValue,
+  createIcon
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
