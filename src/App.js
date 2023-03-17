@@ -21,7 +21,14 @@ import {
   Container,
   Icon,
   useColorModeValue,
-  createIcon
+  createIcon,
+  Tabs,
+  TabPanels,
+  TabPanel,
+  TabList,
+  Tab,
+  Wrap,
+  WrapItem
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
@@ -69,35 +76,30 @@ function App() {
          <Logo h="20px" pointerEvents="none" />
        
           
-          <Heading fontFamily="heading"  fontWeight='bold' lineHeight={10} letterSpacing={-1} ml={4} mb={2}>squarefi</Heading>
+          <Heading fontFamily="heading"  fontWeight='bold' lineHeight={1} letterSpacing={-1} ml={4} mb={2}>squarefi</Heading>
         </Box>
         <Button display={['flex', 'flex', 'none', 'none']}variantColor="teal">Get Started</Button>
         <ButtonGroup spacing='2' display={['none', 'none', 'flex', 'flex']}>
           <ColorModeSwitcher />
             <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
   <Button variant="outline" variantColor="teal">Know more</Button>
-</a>
-          <Button variant="outline" variantColor="teal">Sign up</Button>
-        </ButtonGroup>
+</a>        
+</ButtonGroup>
       </Box>
-      
-        <Container maxW={'3xl'}>
+      <Center>
+      <Box maxW="1080px" mx={4} >
         <Stack
-          as={Box}
-          textAlign={'center'}
-          spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}>
+        pt={100} pb={200} 
+          textAlign={'center'}>
           <Heading
-            fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
+            fontSize={{ base: '3xl', sm: '5xl', md: '6xl' }}>
             The easiest way to 
             <br />
             <Text as={'span'} color={'green.400'}>
               raise funds
             </Text>
           </Heading>
-          <Text color={'gray.500'}>
+          <Text>
             An all-in-one platform to start, manage and grow a decentralized crowdinvestment campaign
           </Text>
           <Stack
@@ -114,176 +116,129 @@ function App() {
               }}>
               Get Started
             </Button>
-            <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-              Learn more
-            </Button>
-         
+            
           </Stack>
         </Stack>
-      </Container>
-      <Center>
-      <Box pt={20} pb={20}  maxW="1080px" mx={4} >
 
+        <Stack
+        pb={100} 
+             textAlign={'center'}>
+          <Heading>
+            Ready for every project
+          </Heading>
+          <Center>
+          <Wrap spacing={4} justify='center'>
+    <WrapItem>
+      <Button colorScheme='gray'>Trust</Button>
+    </WrapItem>
+    <WrapItem>
+      <Button colorScheme='red'>REIT</Button>
+    </WrapItem>
+    <WrapItem>
+      <Button colorScheme='orange'>Venture capital</Button>
+    </WrapItem>
+    <WrapItem>
+      <Button colorScheme='yellow'>Non-Profit</Button>
+    </WrapItem>
+    <WrapItem>
+      <Button colorScheme='green'>Limited Partnership</Button>
+    </WrapItem>
+    <WrapItem>
+      <Button colorScheme='teal'>Crowdfunding</Button>
+    </WrapItem>
+    <WrapItem>
+      <Button colorScheme='blue'>+ More</Button>
+    </WrapItem>
+    
+  </Wrap>
+        </Center>
+        </Stack>
 
-        <VStack spacing={8}>
+        <Stack  pt={100} pb={200} 
+             textAlign={'center'}>
+          <Heading>
+            All the tools in one platform
+          </Heading>
+        <Tabs align="center" variant="unstyled">
+ 
+  <TabList>
+    <Tab _selected={{ color: 'white', fontWeight: '900' }} _hover={{ color: 'white', fontWeight: '900' }}>Offerings catalog</Tab>
+    <Tab _selected={{ color: 'white', fontWeight: '900' }} _hover={{ color: 'white', fontWeight: '900' }}>Investor dashboard</Tab>
+    <Tab _selected={{ color: 'white', fontWeight: '900' }} _hover={{ color: 'white', fontWeight: '900' }}>Entity management</Tab>
+    <Tab _selected={{ color: 'white', fontWeight: '900' }} _hover={{ color: 'white', fontWeight: '900' }}>Control center</Tab>
 
-          <Text fontWeight='bold' fontFamily="heading" fontSize='5xl' align="center" >
-           The easiest way to raise funds</Text>
-        
-          <Text  fontFamily="heading" size='xl'>
-         An all-in-one platform to start, manage and grow a decentralized crowdinvestment campaign</Text>
-         
+  </TabList>
+  <TabPanels>
+    <TabPanel>
+      <Image   src="https://horizon-ui.com/static/media/main-hero-image.c18f68e8fec5f9091e4c.png"/> 
+    </TabPanel>
+    <TabPanel>
+    <Image  src="https://horizon-ui.com/static/media/components-image.fe7ed1fbacb3bd37c686.png"/> 
+    </TabPanel>
+    <TabPanel>
+    <Image  
+    objectFit='cover' src="https://horizon-ui.com/static/media/main-hero-image.c18f68e8fec5f9091e4c.png"/> 
+    </TabPanel>
+    <TabPanel>
+    <Image  
+    objectFit='cover' src="https://horizon-ui.com/static/media/components-image.fe7ed1fbacb3bd37c686.png"/> 
+    </TabPanel>
+
+  </TabPanels>
+</Tabs>
+<Stack
+            direction={'column'}
+            spacing={3}
+            align={'center'}
+            alignSelf={'center'}
+            position={'relative'}>
+            <Button
+              colorScheme={'green'}
+              bg={'green.400'}
+              _hover={{
+                bg: 'green.500',
+              }}>
+              Watch Demo
+            </Button>
+            
+          </Stack>
+
+          <Stack
+         pt={100} pb={200} 
+             textAlign={'center'}>
+          <Heading>
+            Works with
+          </Heading>
+          <Center>
+          <Wrap spacing={4} justify='center'>
+    <WrapItem>
+      <Button colorScheme='gray'>Gnosis</Button>
+    </WrapItem>
+    <WrapItem>
+      <Button colorScheme='red'>Polygon</Button>
+    </WrapItem>
+    <WrapItem>
+      <Button colorScheme='orange'>Ethereum</Button>
+    </WrapItem>
+    <WrapItem>
+      <Button colorScheme='yellow'>Optimism</Button>
+    </WrapItem>
+    <WrapItem>
+      <Button colorScheme='green'>Binance smart chain</Button>
+    </WrapItem>
+    <WrapItem>
+      <Button colorScheme='teal'>Tezos</Button>
+    </WrapItem>
+    <WrapItem>
+      <Button colorScheme='blue'>+ More chains</Button>
+    </WrapItem>
+    
+  </Wrap>
+        </Center>
+        </Stack>
+</Stack>
+
           
-            <Button variantColor="teal">Join a waitlist</Button>
-      
-  <Text 
-            fontWeight='extrabold' fontFamily="heading" size='5xl'>
-        Ready for every project</Text>
-
- <ButtonGroup spacing='2' display='flex' flexWrap='wrap'>
-          
-          
-  <Button variant="outline" variantColor="teal">Real Estate</Button>
-          <Button variant="outline" variantColor="teal">Venture Capital</Button>
- <Button variant="outline" variantColor="teal">Trust</Button>
-<Button variant="outline" variantColor="teal">Crowdfunding</Button>
-<Button variant="outline" variantColor="teal">+ More</Button>
-        </ButtonGroup>
-
-          <SimpleGrid columns={[1, 2, 3]} spacing={8}>
-          <Card maxW='sm' borderRadius={15}>
-              <CardHeader padding={0}> 
-              <AspectRatio  ratio={16 / 9}>
-                <Image
-                src='https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg'
-                alt='Green double couch with wooden legs'
-                objectFit="cover"
-                maxW="100%"
-                overflow="hidden"
-                borderTopRadius={15}
-
-              />
-              </AspectRatio>
-              </CardHeader>
-
-              <CardBody>
-
-                <Stack spacing='3'>
-                  <Heading size='md'>Apartments in Georgia</Heading>
-                  <Text fontSize="sm">
-                    This sofa is perfect for modern tropical spaces, baroque inspired
-                    spaces, earthy toned spaces and for people who love a chic design with a
-                    sprinkle of vintage design.
-                  </Text>
-
-                </Stack>
-              </CardBody>
-              <Divider />
-              <CardFooter display="flex" justifyContent="space-between" alignItems="center">
-                <Text>
-                  $450
-                </Text>
-                <ButtonGroup spacing='2'>
-                  <Button variant='solid' >
-                    Invest now
-                  </Button>
-                  <Button variant='ghost' >
-                    Add to cart
-                  </Button>
-                </ButtonGroup>
-              </CardFooter>
-            </Card>
-            <Card maxW='sm' borderRadius={15}>
-              <CardHeader padding={0}> 
-              <AspectRatio  ratio={16 / 9}>
-                <Image
-                src='https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80'
-                alt='Green double couch with wooden legs'
-                objectFit="cover"
-                maxW="100%"
-                overflow="hidden"
-                borderTopRadius={15}
-
-              />
-              </AspectRatio>
-              </CardHeader>
-
-              <CardBody>
-
-                <Stack spacing='3'>
-                  <Heading size='md'>Living room in Sofia</Heading>
-                  <Text fontSize="sm">
-                    This sofa is perfect for modern tropical spaces, baroque inspired
-                    spaces, earthy toned spaces and for people who love a chic design with a
-                    sprinkle of vintage design.
-                  </Text>
-
-                </Stack>
-              </CardBody>
-              <Divider />
-              <CardFooter display="flex" justifyContent="space-between" alignItems="center">
-                <Text>
-                  $450
-                </Text>
-                <ButtonGroup spacing='2'>
-                  <Button variant='solid' >
-                    Invest now
-                  </Button>
-                  <Button variant='ghost' >
-                    Add to cart
-                  </Button>
-                </ButtonGroup>
-              </CardFooter>
-            </Card>
-
-            <Card maxW='sm' borderRadius={15}>
-              <CardHeader padding={0}> 
-              <AspectRatio  ratio={16 / 9}>
-                <Image
-                src='https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-                alt='Green double couch with wooden legs'
-                objectFit="cover"
-                maxW="100%"
-                overflow="hidden"
-                borderTopRadius={15}
-
-              />
-              </AspectRatio>
-              </CardHeader>
-
-              <CardBody>
-
-                <Stack spacing='3'>
-                  <Heading size='md'>Condo in NewYork</Heading>
-                  <Text fontSize="sm">
-                    This sofa is perfect for modern tropical spaces, baroque inspired
-                    spaces, earthy toned spaces and for people who love a chic design with a
-                    sprinkle of vintage design.
-                  </Text>
-
-                </Stack>
-              </CardBody>
-              <Divider />
-              <CardFooter display="flex" justifyContent="space-between" alignItems="center">
-                <Text>
-                  $450
-                </Text>
-                <ButtonGroup spacing='2'>
-                  <Button variant='solid' >
-                    Invest now
-                  </Button>
-                  <Button variant='ghost' >
-                    Add to cart
-                  </Button>
-                </ButtonGroup>
-              </CardFooter>
-            </Card>
-
-          </SimpleGrid>
-
-
-        </VStack>
-
       </Box>
 
       </Center>
