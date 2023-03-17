@@ -64,7 +64,6 @@ function App() {
           <Button variant="outline" variantColor="teal">Sign up</Button>
         </ButtonGroup>
       </Box>
- <Hero/>
       <Center>
       <Box pt={20} pb={20}  maxW="1080px" mx={4} >
 
@@ -72,26 +71,8 @@ function App() {
         <VStack spacing={8}>
 
           <Text fontWeight='bold' fontFamily="heading" fontSize='5xl' align="center" >
-           The easiest way to raise funds
-          </Text>
- <Text fontWeight='bold' fontFamily="heading" fontSize='6xl'>
-           The easiest way to raise funds
-          </Text>
- <Text fontWeight='bold' fontFamily="heading" fontSize='4xl'>
-           The easiest way to raise funds
-          </Text>
- <Text fontWeight='bold' fontFamily="heading" fontSize='3xl'>
-           The easiest way to raise funds
-          </Text>
- <Text fontWeight='bold' fontFamily="heading" fontSize='2xl'>
-           The easiest way to raise funds
-          </Text>
- <Text fontWeight='bold' fontFamily="heading" fontSize='xl'>
-           The easiest way to raise funds
-          </Text>
- <Text fontWeight='bold' fontFamily="heading" fontSize='lg'>
-           The easiest way to raise funds
-          </Text>
+           The easiest way to raise funds</Text>
+        
           <Text  fontFamily="heading" size='xl'>
          An all-in-one platform to start, manage and grow a decentralized crowdinvestment campaign</Text>
          
