@@ -17,7 +17,10 @@ import {
   SimpleGrid,
   CardHeader,
   Center,
-  AspectRatio
+  AspectRatio,
+  Container,
+  Icon,
+  Arrow
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
@@ -106,7 +109,6 @@ function App() {
             <Box>
               <Icon
                 as={Arrow}
-                color={useColorModeValue('gray.800', 'gray.300')}
                 w={71}
                 position={'absolute'}
                 right={-71}
