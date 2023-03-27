@@ -40,7 +40,6 @@ import 'typeface-montserrat';
 import logo from './logo.svg';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import './styles/fonts.css';
-import './styles/styles.css';
 
 
 
