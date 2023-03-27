@@ -29,8 +29,10 @@ import {
   Tab,
   Wrap,
   WrapItem,
-  VisuallyHidden
+  VisuallyHidden,
+  IconButton
 } from '@chakra-ui/react';
+import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons'
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
 import 'typeface-inter';
@@ -38,6 +40,7 @@ import 'typeface-montserrat';
 import logo from './logo.svg';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import './styles/fonts.css';
+import './styles/styles.css';
 
 
 
@@ -53,7 +56,7 @@ const theme = extendTheme({
         heading: "Loos Wide, Montserrat,  sans-serif",
         mono: "Menlo, monospace",
       },
-      initialColorMode: 'light',
+      initialColorMode: 'dark',
       useSystemColorMode: false,
   
 })
@@ -87,10 +90,10 @@ function App() {
         <Box height={"100vh"} py={200}>
       
         <Stack  textAlign={'center'} >
-          <Heading as="h1" mb={4}>
+          <Heading as="h1" size="2xl" mb={3}>
             The easiest way <br/> to raise funds
           </Heading>
-          <Text >
+          <Text  >
             An all-in-one platform to start, manage and grow a decentralized crowdinvestment campaign
           </Text>
         
@@ -101,7 +104,7 @@ function App() {
             alignSelf={'center'}
             position={'relative'}>
               <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
-            <Button mt={10}  size='lg'>
+            <Button mt={10} colorScheme="yellow" size='lg'>
              Get Started
             </Button> </a>
             
@@ -120,25 +123,28 @@ function App() {
           <Center>
           <Wrap spacing={4} justify='center' maxW={720}>
     <WrapItem>
-      <Button colorScheme='gray'>Trust</Button>
+      <Button variant="outline" colorScheme='gray'>Trust</Button>
     </WrapItem>
     <WrapItem>
-      <Button colorScheme='red'>REIT</Button>
+      <Button variant="outline" colorScheme='red'>REIT</Button>
     </WrapItem>
     <WrapItem>
-      <Button colorScheme='orange'>Venture capital</Button>
+      <Button variant="outline"  colorScheme='orange'>Venture capital</Button>
     </WrapItem>
     <WrapItem>
-      <Button colorScheme='yellow'>Non-Profit</Button>
+      <Button  variant="outline" colorScheme='yellow'>Non-Profit</Button>
     </WrapItem>
     <WrapItem>
-      <Button colorScheme='green'>Limited Partnership</Button>
+      <Button variant="outline" colorScheme='green'>Limited Partnership</Button>
     </WrapItem>
     <WrapItem>
-      <Button colorScheme='teal'>Crowdfunding</Button>
+      <Button variant="outline"  colorScheme='teal'>Crowdfunding</Button>
     </WrapItem>
     <WrapItem>
-      <Button colorScheme='blue'>+ More</Button>
+    <ButtonGroup  isAttached variant='outline'>
+  <Button>More</Button>
+  <IconButton aria-label='Add to friends' icon={<AddIcon />} />
+</ButtonGroup>
     </WrapItem>
     
   </Wrap>
@@ -159,7 +165,7 @@ function App() {
     <Tab _selected={{  fontWeight: '900' }} _hover={{  fontWeight: '900' }}>Control center</Tab>
 
   </TabList>
-  <TabPanels px={32}>
+  <TabPanels >
     <TabPanel>
       <Image   src="https://horizon-ui.com/static/media/main-hero-image.c18f68e8fec5f9091e4c.png"/> 
     </TabPanel>
@@ -225,9 +231,19 @@ function App() {
     </WrapItem>
     
   </Wrap>
+  
         </Center>
         </Stack>
-      
+
+        <Box>
+        <IconButton
+  colorScheme='teal'
+  aria-label='Call Segun'
+  size='lg'
+  variant={'outline'}
+  icon={<AddIcon />}
+/>  <Text as="h4" fontSize="xs">Ethereum</Text>   </Box>
+       
 </Stack>
 
       <Container
