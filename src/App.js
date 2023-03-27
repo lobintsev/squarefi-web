@@ -37,6 +37,7 @@ import 'typeface-inter';
 import 'typeface-montserrat';
 import logo from './logo.svg';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import './styles/fonts.css';
 
 
 
@@ -48,8 +49,8 @@ const theme = extendTheme({
         _dark: { bg: 'gray.800' }
       }}},
       fonts: {
-        body: "Montserrat, sans-serif",
-        heading: "Montserrat, sans-serif",
+        body: "Loos Wide, Montserrat,  sans-serif",
+        heading: "Loos Wide, Montserrat,  sans-serif",
         mono: "Menlo, monospace",
       },
       initialColorMode: 'light',
@@ -58,36 +59,7 @@ const theme = extendTheme({
 })
 
 
-const SocialButton = ({
-  children,
-  label,
-  href,
-}: {
-  children: ReactNode;
-  label: string;
-  href: string;
-}) => {
-  return (
-    <Button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-      rounded={'full'}
-      w={8}
-      h={8}
-      cursor={'pointer'}
-      as={'a'}
-      href={href}
-      display={'inline-flex'}
-      alignItems={'center'}
-      justifyContent={'center'}
-      transition={'background 0.3s ease'}
-      _hover={{
-        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-      }}>
-      <VisuallyHidden>{label}</VisuallyHidden>
-      {children}
-    </Button>
-  );
-};
+
 
 function App() {
   return (
@@ -115,7 +87,7 @@ function App() {
         <Box height={"100vh"} py={200}>
       
         <Stack  textAlign={'center'} >
-          <Heading mb={4}>
+          <Heading as="h1" mb={4}>
             The easiest way <br/> to raise funds
           </Heading>
           <Text >
@@ -271,17 +243,7 @@ function App() {
         <Heading fontSize={"xl"} fontWeight='bold' lineHeight={1} letterSpacing={-1} ml={4}>squarefi</Heading> </Box>
         <Text>© 2023 Squarefi Inc. All rights reserved</Text>
         
-        <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
-            <FaTwitter />
-          </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
-            <FaInstagram />
-          </SocialButton>
-        </Stack>
+      
       </Container>
     </Box>
           
