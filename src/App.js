@@ -226,8 +226,11 @@ function App() {
       <Button colorScheme='teal'>Tezos</Button>
     </WrapItem>
     <WrapItem>
-      <Button colorScheme='blue'>+ More chains</Button>
-    </WrapItem>
+    <ButtonGroup  isAttached variant='outline'>
+    <Button colorScheme='blue'>More chains</Button>
+  <IconButton aria-label='Add to friends' icon={<AddIcon />} />
+</ButtonGroup>
+          </WrapItem>
     
   </Wrap>
   
