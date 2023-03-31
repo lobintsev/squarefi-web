@@ -30,7 +30,16 @@ import {
   Wrap,
   WrapItem,
   VisuallyHidden,
-  IconButton
+  IconButton, 
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Link
 } from '@chakra-ui/react';
 import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons'
 import { ColorModeSwitcher } from './ColorModeSwitcher';
@@ -38,7 +47,6 @@ import { Logo } from './Logo';
 import 'typeface-inter';
 import 'typeface-montserrat';
 import logo from './logo.svg';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import './styles/fonts.css';
 
 
@@ -63,6 +71,9 @@ const theme = extendTheme({
 
 
 function App() {
+
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
   return (
     <ChakraProvider theme={theme}>
      
@@ -187,14 +198,26 @@ function App() {
             align={'center'}
             alignSelf={'center'}
             position={'relative'}>
-            <Button
-              colorScheme={'green'}
-              bg={'green.400'}
-              _hover={{
-                bg: 'green.500',
-              }}>
-              Watch Demo
-            </Button>
+            <Button   onClick={onOpen} 
+               
+          key="full"
+          m={4}
+        >Watch Demo</Button>
+
+
+      <Modal onClose={onClose} size="full" isOpen={isOpen}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Watch Demo</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+          <Text></Text>
+          </ModalBody>
+          <ModalFooter>
+            <Button onClick={onClose}>Close</Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
             
           </Stack>
 
@@ -227,7 +250,7 @@ function App() {
     <WrapItem>
     <ButtonGroup  isAttached variant='outline'>
     <Button colorScheme='blue'>More chains</Button>
-  <IconButton aria-label='Add to friends' icon={<AddIcon />} />
+  <IconButton aria-label='Add to friends' icon={<AddIcon />} colorScheme='blue'/>
 </ButtonGroup>
           </WrapItem>
     
@@ -236,14 +259,7 @@ function App() {
         </Center>
         </Stack>
 
-        <Box>
-        <IconButton
-  colorScheme='teal'
-  aria-label='Call Segun'
-  size='lg'
-  variant={'outline'}
-  icon={<AddIcon />}
-/>  <Text as="h4" fontSize="xs">Ethereum</Text>   </Box>
+      
        
 </Stack>
 
@@ -258,8 +274,13 @@ function App() {
           <Box display="flex" alignItems="center" justifyContent="right" >
         <Image h="20px" pointerEvents="none" src={logo}/>
         <Heading fontSize={"xl"} fontWeight='bold' lineHeight={1} letterSpacing={-1} ml={4}>squarefi</Heading> </Box>
+        
+        
+        <Link href='https://docs.squarefi.io/legal/privacy-policy'>Privacy Policy</Link>
+        <Link href='https://docs.squarefi.io/legal/terms-and-conditions'>Terms and Conditions</Link>
         <Text>© 2023 Squarefi Inc. All rights reserved</Text>
         
+    
       
       </Container>
     </Box>
