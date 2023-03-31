@@ -47,7 +47,7 @@ const theme = extendTheme({
   styles: {
     global: {
       'html, body': {
-          _dark: { bg: 'gray.800' }
+          dark: { bg: 'gray.800' }
       }}},
       fonts: {
         body: "Loos Wide, Montserrat,  sans-serif",
