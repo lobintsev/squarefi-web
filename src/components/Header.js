@@ -1,13 +1,12 @@
 import React from 'react';
-import { Box, Heading, Image, Button, ButtonGroup } from '@chakra-ui/react';
-
-import logo from '../static/logo.svg';
+import { Box, Heading, Button, ButtonGroup } from '@chakra-ui/react';
+import { Logo } from "../Logo"
 
 function Header() {
   return (
     <Box
       position="sticky"
-      py={2}
+      py={4}
       px={4}
       top={0}
       zIndex={1}
@@ -17,11 +16,13 @@ function Header() {
       boxShadow="xs"
       backdropFilter="auto"
       backdropBlur="10px"
-      _dark={{}}
     >
+       
       <Box display="flex" alignItems="center" justifyContent="right">
-        <Image h="20px" pointerEvents="none" src={logo} />
-        <Heading fontSize={"xl"} fontWeight="bold" lineHeight={1} letterSpacing={-1} ml={4}>
+       
+
+      <Logo />
+        <Heading fontSize={"xl"} fontWeight="bold" letterSpacing={-1} ml={2}>
           squarefi
         </Heading>
       </Box>
@@ -30,11 +31,16 @@ function Header() {
           Learn More
         </Button>
       </a>
-      <ButtonGroup spacing="2" display={['none', 'none', 'flex', 'flex']}>
+      <ButtonGroup spacing={4} display={['none', 'none', 'flex', 'flex']}>
        
         <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
-          <Button variant="outline" variantcolor="teal">
+          <Button  colorScheme={"cyan"} variant={'outline'}>
             Learn more
+          </Button>
+        </a>
+        <a href="https://sqrfspv.vercel.app/dashpanel/" target="_blank" rel="noopener noreferrer">
+          <Button  colorScheme={"yellow"} >
+            Launchpad
           </Button>
         </a>
       </ButtonGroup>

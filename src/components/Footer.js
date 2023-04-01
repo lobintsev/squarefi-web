@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Stack, Box, Heading, Image, Link, Text } from '@chakra-ui/react';
-import logo from '../static/logo.svg';
+import { Container, Stack, Box, Heading, Image, Text, Link } from '@chakra-ui/react';
+import { Link as RouterLink } from 'react-router-dom';
+import { Logo } from "../Logo"
 
 function Footer() {
   return (
@@ -14,13 +15,14 @@ function Footer() {
       align={{ base: 'center', md: 'center' }}
     >
       <Box display="flex" alignItems="center" justifyContent="right">
-        <Image h="20px" pointerEvents="none" src={logo} />
+        <Logo />
         <Heading fontSize={"xl"} fontWeight="bold" lineHeight={1} letterSpacing={-1} ml={4}>
           squarefi
         </Heading>
       </Box>
       <Link href="https://docs.squarefi.io/legal/privacy-policy">Privacy Policy</Link>
       <Link href="https://docs.squarefi.io/legal/terms-and-conditions"> Terms and Conditions </Link>
+      <Link as={RouterLink} to="/legal">Legal</Link>
       <Text>© 2023 Squarefi Inc. All rights reserved</Text>
       </Container>
   )

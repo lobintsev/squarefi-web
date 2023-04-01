@@ -35,7 +35,7 @@ function Home() {
             The easiest way <br /> to raise funds
           </Heading>
           <Text fontWeight="500" fontSize={{ base: '18px', md: '22px', lg: '26px' }} maxW="720px">
-            An all-in-one platform to start, manage and grow a decentralized crowdinvestment campaign
+            An all-in-one platform to start, manage and grow a decentralized fundrising campaign
           </Text>
          
           <Stack
@@ -47,7 +47,7 @@ function Home() {
           >
             <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
               <Button mt={{ base: 10, md: 12, lg: 14 }} py={{ base: 4, md: 5, lg: 6 }} px={{ base: 8, md: 10, lg: 12 }} borderRadius="xl" colorScheme="yellow" h={"full"}>
-                Know More
+                Learn More
               </Button>
             </a>
           </Stack>
