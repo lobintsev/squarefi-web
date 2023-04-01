@@ -5,13 +5,13 @@ import { Text, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFoot
 function DemoModal({ isOpen, onClose, onOpen }) {
   return (
     <>
-      <Button onClick={onOpen} key="full" m={4}>
+      <Button onClick={onOpen} key="full" m={4} colorScheme="yellow">
         Watch Demo
       </Button>
 
       <Modal onClose={onClose} size="full" isOpen={isOpen}>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent bgColor={'gray.900'}>
           <ModalHeader>Watch Demo</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
