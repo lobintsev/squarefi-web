@@ -34,7 +34,7 @@ function Home() {
           <Heading  fontSize={{ base: '36px', md: '52px', lg: '72px' }} mb={3}>
             The easiest way <br /> to raise funds
           </Heading>
-          <Text as='samp' fontSize={{ base: '18px', md: '22px', lg: '26px' }} maxW="720px">
+          <Text fontWeight="500" fontSize={{ base: '18px', md: '22px', lg: '26px' }} maxW="720px">
             An all-in-one platform to start, manage and grow a decentralized crowdinvestment campaign
           </Text>
          
@@ -46,7 +46,7 @@ function Home() {
             position={'relative'}
           >
             <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
-              <Button mt={10} colorScheme="yellow" size="lg">
+              <Button mt={{ base: 10, md: 12, lg: 14 }} py={{ base: 4, md: 5, lg: 6 }} px={{ base: 8, md: 10, lg: 12 }} borderRadius="xl" colorScheme="yellow" h={"full"}>
                 Know More
               </Button>
             </a>
@@ -84,24 +84,24 @@ function Home() {
           </Wrap>
         </Center>
       </Stack>
-      <Stack pt={100} pb={200} textAlign={'center'}>
+      <Stack pt={100} pb={100} textAlign={'center'}>
         <Heading>All the tools in one platform</Heading>
         <Tabs align="center" variant="unstyled">
         <TabList flexWrap={"wrap"}>
-    <Tab _selected={{  fontWeight: '900' }} _hover={{  fontWeight: '900' }}>Offerings catalog</Tab>
-    <Tab _selected={{  fontWeight: '900' }} _hover={{ fontWeight: '900' }}>Investor dashboard</Tab>
-    <Tab _selected={{  fontWeight: '900' }} _hover={{ fontWeight: '900' }}>Entity management</Tab>
-    <Tab _selected={{  fontWeight: '900' }} _hover={{  fontWeight: '900' }}>Control center</Tab>
+    <Tab _selected={{  color: "yellow" }} _hover={{ color: "yellow" }}>Offerings catalog</Tab>
+    <Tab _selected={{  color: "yellow" }} _hover={{ color: "yellow" }}>Investor dashboard</Tab>
+    <Tab _selected={{  color: "yellow" }} _hover={{ color: "yellow" }}>Entity management</Tab>
+    <Tab _selected={{  color: "yellow" }} _hover={{ color: "yellow" }}>Control center</Tab>
 
   </TabList>
-  <TabPanels >
-    <TabPanel>
+  <TabPanels  maxW={{ base: '560px', md: '720px', lg: '1000px' }}>
+    <TabPanel  filter='auto' blur='2px'>
       <Image   src="https://horizon-ui.com/static/media/main-hero-image.c18f68e8fec5f9091e4c.png"/> 
-    </TabPanel>
-    <TabPanel>
+    </TabPanel >
+    <TabPanel filter='grayscale(80%)'>
     <Image src="https://horizon-ui.com/static/media/main-hero-image.c18f68e8fec5f9091e4c.png"/> 
     </TabPanel>
-    <TabPanel>
+    <TabPanel filter='invert(75%)'>
     <Image  
    src="https://horizon-ui.com/static/media/main-hero-image.c18f68e8fec5f9091e4c.png"/> 
     </TabPanel>
