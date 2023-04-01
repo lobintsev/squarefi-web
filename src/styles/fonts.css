@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'LoosWide';
+    src: url('../fonts/Loos Latin, Cyrillic Wide-Bold-Web.woff2') format('woff2'),
+         url('../fonts/Loos Latin, Cyrillic Wide-Bold-Web.woff') format('woff'),
+         url('../fonts/Loos Latin, Cyrillic Wide-Bold-Web.ttf') format('truetype');
+   
+  }
