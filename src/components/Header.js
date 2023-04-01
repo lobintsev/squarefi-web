@@ -27,7 +27,7 @@ function Header() {
         </Heading>
       </Box>
       <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
-        <Button display={['flex', 'flex', 'none', 'none']} variantcolor="teal">
+        <Button display={['flex', 'flex', 'none', 'none']} colorScheme="teal">
           Learn More
         </Button>
       </a>
