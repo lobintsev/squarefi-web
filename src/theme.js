@@ -5,15 +5,13 @@ const theme = extendTheme({
     styles: {
         global: {
           'html, body': {
-              dark: { bg: 'gray.800' }
+              bg: 'gray.800'
           }}},
           fonts: {
             body: "LoosWide, sans-serif",
             heading: "LoosWide, sans-serif",
             mono: "Menlo, monospace",
-          },
-          initialColorMode: 'dark',
-          useSystemColorMode: false,
+          }
 });
 
 export default theme;
