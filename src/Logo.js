@@ -19,7 +19,7 @@ export const Logo = props => {
 
   return <IconButton animation={animation}
   colorScheme='yellow' size='sm'
-  h={5} w={5} minH={0} minW={0}
+  h={{ base: 4, md: 5, lg: 6 }} w={{ base: 4, md: 5, lg: 6 }} minH={0} minW={0}
   aria-label='SquareFi Logo'
   icon={logo}  {...props}
 /> 

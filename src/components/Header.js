@@ -22,7 +22,7 @@ function Header() {
        
 
       <Logo />
-        <Heading fontSize={"xl"} fontWeight="bold" letterSpacing={-1} ml={2}>
+        <Heading fontSize={['md', 'md', 'xl', '2xl']} fontWeight="bold" letterSpacing={-1} ml={2}>
           squarefi
         </Heading>
       </Box>

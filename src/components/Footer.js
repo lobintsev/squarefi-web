@@ -16,7 +16,7 @@ function Footer() {
     >
       <Box display="flex" alignItems="center" justifyContent="right">
         <Logo />
-        <Heading fontSize={"xl"} fontWeight="bold" lineHeight={1} letterSpacing={-1} ml={4}>
+        <Heading fontSize={['md', 'md', 'xl', '2xl']} fontWeight="bold" lineHeight={1} letterSpacing={-1} ml={4}>
           squarefi
         </Heading>
       </Box>
