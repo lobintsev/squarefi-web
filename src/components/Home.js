@@ -4,6 +4,7 @@ import {
   Box,
   Heading,
   Stack,
+  VStack,
   Button,
   Text,
   Center,
@@ -28,14 +29,15 @@ function Home() {
   return (
     <Box mx={4}>
       <Box height={'100vh'} py={200}>
-        <Stack textAlign={'center'}>
-          <Heading as="h1" size="2xl" mb={3}>
+        <VStack textAlign={"center"}>
+         
+          <Heading  fontSize={{ base: '36px', md: '52px', lg: '72px' }} mb={3}>
             The easiest way <br /> to raise funds
           </Heading>
-          <Text>
+          <Text as='samp' fontSize={{ base: '18px', md: '22px', lg: '26px' }} maxW="720px">
             An all-in-one platform to start, manage and grow a decentralized crowdinvestment campaign
           </Text>
-
+         
           <Stack
             direction={'column'}
             spacing={3}
@@ -49,7 +51,7 @@ function Home() {
               </Button>
             </a>
           </Stack>
-        </Stack>
+        </VStack>
       </Box>
       <Stack pb={100} textAlign={'center'}>
         <Heading mb={6}>Ready for every project</Heading>

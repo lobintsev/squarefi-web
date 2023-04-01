@@ -5,15 +5,17 @@ const theme = extendTheme({
     styles: {
         global: {
           'html, body': {
-              _dark: { bg: 'gray.800' }
+              bg: 'gray.800',
+              color: "white"
           }}},
           fonts: {
             body: "LoosWide, sans-serif",
             heading: "LoosWide, sans-serif",
             mono: "Menlo, monospace",
-          },
-          initialColorMode: 'dark',
-          useSystemColorMode: false,
+          }
+          
+         
+        
 });
 
 export default theme;

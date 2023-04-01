@@ -34,7 +34,7 @@ function Header() {
        
         <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
           <Button variant="outline" variantcolor="teal">
-            Know more
+            Learn more
           </Button>
         </a>
       </ButtonGroup>
