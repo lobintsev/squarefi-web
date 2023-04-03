@@ -27,14 +27,14 @@ function Header() {
         </Heading>
       </Box>
       <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
-        <Button display={['flex', 'flex', 'none', 'none']} colorScheme="teal">
+        <Button display={['flex', 'flex', 'none', 'none']} colorScheme="yellow">
           Learn More
         </Button>
       </a>
       <ButtonGroup spacing={4} display={['none', 'none', 'flex', 'flex']}>
        
         <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
-          <Button  colorScheme={"cyan"} variant={'outline'}>
+          <Button  colorScheme={"purple"}>
             Learn more
           </Button>
         </a>

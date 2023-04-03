@@ -17,7 +17,9 @@ import {
   TabList,
   Tab,
   ButtonGroup,
-  IconButton
+  IconButton,
+  Flex,
+  Spacer
 } from '@chakra-ui/react';
 import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons'
 import { useDisclosure } from '@chakra-ui/react';
@@ -154,6 +156,37 @@ function Home() {
           </Wrap>
         </Center>
       </Stack>
+
+      <VStack pt={100} pb={200} textAlign={'center'}>
+        <Heading mb={6}>Help at every step</Heading>
+        <Wrap spacing={4} justify="center" maxW={690}>
+          <WrapItem>
+        <Heading>Success managers</Heading>
+        </WrapItem>
+        <WrapItem>
+        <Heading>Product Management</Heading>
+        </WrapItem>
+        <WrapItem>
+        <Heading>Legal Development</Heading>
+        </WrapItem>
+        <WrapItem>
+        <Heading>Templates</Heading>
+        </WrapItem>
+        <WrapItem>
+        <Heading>Smart Contract modification</Heading>
+        </WrapItem>
+        <WrapItem>
+        <Heading>Entity Management</Heading>
+        </WrapItem>
+        <WrapItem>
+        <Heading>Team Education</Heading>
+        </WrapItem>
+        <WrapItem>
+        <Heading>Guides</Heading>
+        </WrapItem>
+        </Wrap>
+        </VStack>
+        
     </Box>
   );
 }
