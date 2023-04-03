@@ -159,7 +159,7 @@ function Home() {
 
       <VStack pt={100} pb={200} textAlign={'center'}>
         <Heading mb={6}>Help at every step</Heading>
-        <Wrap spacing={4} justify="center" maxW={690}>
+        <Wrap spacing={4} justify="center" maxW={1200}>
           <WrapItem>
         <Heading>Success managers</Heading>
         </WrapItem>
