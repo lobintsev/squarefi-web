@@ -30,7 +30,7 @@ function Home() {
 
   return (
     <Box mx={4}>
-      <Box height={'100vh'} py={200}>
+      <Box height={'100vh'} py={100}>
         <VStack textAlign={"center"}>
          
           <Heading  fontSize={{ base: '36px', md: '52px', lg: '72px' }} mb={3}>
@@ -159,31 +159,28 @@ function Home() {
 
       <VStack pt={100} pb={200} textAlign={'center'}>
         <Heading mb={6}>Help at every step</Heading>
-        <Wrap spacing={4} justify="center" maxW={1200}>
-          <WrapItem>
-        <Heading>Success managers</Heading>
-        </WrapItem>
+        <Wrap spacing={4} justify="center" align='center' maxW={(500, 720, 1056)}>
+          
         <WrapItem>
-        <Heading>Product Management</Heading>
+        <Heading>Product Development</Heading>
         </WrapItem>
+        <WrapItem><AddIcon /> </WrapItem>
         <WrapItem>
-        <Heading>Legal Development</Heading>
+        <Heading>Legal Consulting</Heading>
         </WrapItem>
+        <WrapItem><AddIcon /></WrapItem>
         <WrapItem>
-        <Heading>Templates</Heading>
+        <Heading>Entity Formation</Heading>
         </WrapItem>
+        <WrapItem><AddIcon /></WrapItem>
         <WrapItem>
         <Heading>Smart Contract modification</Heading>
         </WrapItem>
+        <WrapItem><AddIcon /></WrapItem>
         <WrapItem>
         <Heading>Entity Management</Heading>
         </WrapItem>
-        <WrapItem>
-        <Heading>Team Education</Heading>
-        </WrapItem>
-        <WrapItem>
-        <Heading>Guides</Heading>
-        </WrapItem>
+      
         </Wrap>
         </VStack>
         
