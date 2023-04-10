@@ -159,26 +159,26 @@ function Home() {
 
       <VStack pt={100} pb={200} textAlign={'center'}>
         <Heading mb={6}>Help at every step</Heading>
-        <Wrap spacing={4} justify="center" align='center' maxW={(500, 720, 1056)}>
+        <Wrap spacing={4} justify="center" align='center' maxW={(500, 720, 1056)} fontSize={{ base: '18px', md: '22px', lg: '26px' }}>
           
         <WrapItem>
-        <Heading>Product Development</Heading>
+        <Text>Product Development</Text>
         </WrapItem>
         <WrapItem><AddIcon /> </WrapItem>
         <WrapItem>
-        <Heading>Legal Consulting</Heading>
+        <Text>Legal Consulting</Text>
         </WrapItem>
         <WrapItem><AddIcon /></WrapItem>
         <WrapItem>
-        <Heading>Entity Formation</Heading>
+        <Text>Entity Formation</Text>
         </WrapItem>
         <WrapItem><AddIcon /></WrapItem>
         <WrapItem>
-        <Heading>Smart Contract modification</Heading>
+        <Text>Smart Contract modification</Text>
         </WrapItem>
         <WrapItem><AddIcon /></WrapItem>
         <WrapItem>
-        <Heading>Entity Management</Heading>
+        <Text>Entity Management</Text>
         </WrapItem>
       
         </Wrap>
