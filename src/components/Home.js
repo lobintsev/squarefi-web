@@ -122,7 +122,7 @@ function Home() {
             position={'relative'}>
 
 <a href="https://share-eu1.hsforms.com/1mL6YTNwxQiev-GbQUG9BTQg4dnb" target="_blank" rel="noopener noreferrer">
-              <Button mt={{ base: 10, md: 12, lg: 14 }} py={{ base: 4, md: 5, lg: 6 }} px={{ base: 8, md: 10, lg: 12 }} borderRadius="xl" colorScheme="yellow" h={"full"}>
+              <Button colorScheme='purple' >
                 Request Demo
               </Button>
             </a>
@@ -169,23 +169,27 @@ function Home() {
         <Wrap spacing={4} justify="center" align='center' maxW={(500, 720, 1056)} fontSize={{ base: '18px', md: '22px', lg: '26px' }}>
           
         <WrapItem>
-        <Text>Product Development</Text>
+        <Text>Entity formation</Text>
         </WrapItem>
         <WrapItem><AddIcon /> </WrapItem>
         <WrapItem>
-        <Text>Legal Consulting</Text>
+        <Text>Fiat & Crypto accounts</Text>
         </WrapItem>
         <WrapItem><AddIcon /></WrapItem>
         <WrapItem>
-        <Text>Entity Formation</Text>
+        <Text>Legal documents</Text>
         </WrapItem>
         <WrapItem><AddIcon /></WrapItem>
         <WrapItem>
-        <Text>Smart Contract modification</Text>
+        <Text>Investor onboarding</Text>
         </WrapItem>
         <WrapItem><AddIcon /></WrapItem>
         <WrapItem>
-        <Text>Entity Management</Text>
+        <Text>Regulatory filings</Text>
+        </WrapItem>
+        <WrapItem><AddIcon /></WrapItem>
+        <WrapItem>
+        <Text>Capital distribution</Text>
         </WrapItem>
       
         </Wrap>
