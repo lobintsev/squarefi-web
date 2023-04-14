@@ -120,7 +120,14 @@ function Home() {
             align={'center'}
             alignSelf={'center'}
             position={'relative'}>
-      <DemoModal isOpen={isOpen} onClose={onClose} onOpen={onOpen} /> </Stack>
+
+<a href="https://share-eu1.hsforms.com/1mL6YTNwxQiev-GbQUG9BTQg4dnb" target="_blank" rel="noopener noreferrer">
+              <Button mt={{ base: 10, md: 12, lg: 14 }} py={{ base: 4, md: 5, lg: 6 }} px={{ base: 8, md: 10, lg: 12 }} borderRadius="xl" colorScheme="yellow" h={"full"}>
+                Request Demo
+              </Button>
+            </a>
+
+       </Stack>
       </Stack>
     
 
