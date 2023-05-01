@@ -30,14 +30,14 @@ function Home() {
 
   return (
     <Box mx={4}>
-      <Box height={'100vh'} py={100}>
+      <Box  pb={100} py={100}>
         <VStack textAlign={"center"}>
          
           <Heading  fontSize={{ base: '36px', md: '52px', lg: '72px' }} mb={3}>
             The easiest way <br /> to raise funds
           </Heading>
           <Text fontWeight="500" fontSize={{ base: '18px', md: '22px', lg: '26px' }} maxW="720px">
-            An all-in-one platform to start, manage and grow a decentralized fundrising campaign
+            An all-in-one platform to start, manage and grow a fundraising campaign
           </Text>
          
           <Stack
