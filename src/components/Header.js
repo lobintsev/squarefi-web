@@ -26,21 +26,17 @@ function Header() {
           squarefi
         </Heading>
       </Box>
+     
+      <ButtonGroup spacing={4} display={['none', 'none', 'flex', 'flex']}>
+       
       <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
-        <Button display={['flex', 'flex', 'none', 'none']} colorScheme="yellow">
+        <Button  colorScheme="yellow">
           Learn More
         </Button>
       </a>
-      <ButtonGroup spacing={4} display={['none', 'none', 'flex', 'flex']}>
-       
-        <a href="https://docs.squarefi.io" target="_blank" rel="noopener noreferrer">
-          <Button  colorScheme={"purple"}>
-            Learn more
-          </Button>
-        </a>
         <a href="https://sqrfspv.vercel.app/dashpanel/" target="_blank" rel="noopener noreferrer">
           <Button  colorScheme={"yellow"} >
-            Launchpad
+            Login
           </Button>
         </a>
       </ButtonGroup>

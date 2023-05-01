@@ -5,12 +5,12 @@ const theme = extendTheme({
     styles: {
         global: {
           'html, body': {
-              bg: 'gray.800',
+              bg: 'gray.900',
               color: "white"
           }}},
           fonts: {
-            body: "LoosWide, sans-serif",
-            heading: "LoosWide, sans-serif",
+            body: "Space Grotesk, sans-serif",
+            heading: "Space Grotesk, sans-serif",
             mono: "Menlo, monospace",
           }
           
