@@ -39,10 +39,10 @@ function Home() {
         <VStack textAlign={"center"}>
          
           <Heading  fontSize={{ base: '36px', md: '52px', lg: '72px' }} mb={3}>
-            The easiest way <br /> to raise funds
+            The easiest way <br /> to invest in Real Estate
           </Heading>
           <Text fontWeight="500" fontSize={{ base: '18px', md: '22px', lg: '26px' }} maxW="720px">
-            An all-in-one platform to start, manage and grow a fundraising campaign
+            Become a landlord and own a profitae commercial real estate for as low as 100$
           </Text>
      
         </VStack>
